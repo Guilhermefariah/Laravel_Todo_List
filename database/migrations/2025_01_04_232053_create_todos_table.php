@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
-            $table->string('table');
+            $table->string('title');
             $table->text('description')->nullable();
             $table->boolean('isDone')->default(false);
             $table->timestamps();
